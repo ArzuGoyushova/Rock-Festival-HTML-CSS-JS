@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: MonumentExtended-Regular;
+  src: url(../fonts/MonumentExtended-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+#info .info-content .day,
+#info .info-content .ticket-count,
+#info .info-content .performers {
+  width: 220px;
+}
+
+.opacity-medium {
+  opacity: 60%;
+}
+
+.font-monument {
+  font-family: MonumentExtended-Regular;
+  color: white;
+  font-size: 16px;
+}
+
+#ticket {
+  padding-top: 88px;
+}
+#ticket .ad-box {
+  height: 510px;
+  background-image: url(../img/01\ rock\ photo.png);
+  background-repeat: no-repeat;
+  background-size: 384px;
+  background-position-x: 78%;
+  background-position-y: 10%;
+}
+#ticket .ad-box .left-side .title h1 {
+  font-family: MonumentExtended-Regular;
+  color: white;
+}
+#ticket .ad-box .left-side .desc {
+  width: 64%;
+  color: white;
+}
+#ticket .ad-box .left-side .buy-ticket-button button {
+  width: 25%;
+  height: 54px;
+  font-size: 14px;
+  font-family: MonumentExtended-Regular;
+  background-color: #FFFF00;
+  border: none;
+}
+#ticket .ad-box .left-side .buy-ticket-button i {
+  font-size: 16px;
+  font-stretch: wider;
+  margin-left: 10px;
+}
+#ticket .ad-box .right-side .rock-2 img {
+  width: 72%;
+  float: right;
+  margin-top: 26px;
+}
+#ticket .ad-box .right-side .ellipse img {
+  width: 20%;
+  position: relative;
+  top: 68px;
+  left: 60px;
+}
+
+#info .info-content {
+  font-family: MonumentExtended-Regular;
+  color: white;
+}
+#info .info-content span {
+  font-size: 16px;
+}
+
+#about-festival .about-festival-content {
+  padding: 60px 0;
+}
+#about-festival .about-festival-content .left-side {
+  position: relative;
+}
+#about-festival .about-festival-content .left-side .img-01 {
+  width: 70%;
+}
+#about-festival .about-festival-content .left-side .img-02 {
+  position: absolute;
+  bottom: -100px;
+  left: 200px;
+}
+#about-festival .about-festival-content .right-side .title {
+  font-family: MonumentExtended-Regular;
+  color: white;
+}
+#about-festival .about-festival-content .right-side .desc {
+  color: white;
+}
+
+#animation .anime {
+  padding: 100px 0 44px 0;
+}
+#animation .anime .wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+#animation .anime .marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+#animation .anime .marquee p {
+  font-family: MonumentExtended-Regular;
+  color: #FFFF00;
+  display: inline-block;
+  font-size: 24px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-34%, 0, 0);
+  }
+}
+#schedule .schedule-content {
+  color: white;
+}
+#schedule .schedule-content .title {
+  font-family: MonumentExtended-Regular;
+  border-bottom: 1px solid rgb(124, 121, 121);
+  padding-bottom: 32px;
+}
+#schedule .schedule-content .schedule-row {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgb(124, 121, 121);
+}
+#schedule .schedule-content .date {
+  font-size: 28px;
+  font-family: MonumentExtended-Regular;
+}
+#schedule .schedule-content .info {
+  font-size: 20px;
+}
+
+#tickets .tickets-content {
+  margin-top: 40px;
+  color: white;
+}
+#tickets .tickets-content .title {
+  font-family: MonumentExtended-Regular;
+}
+#tickets .tickets-content .desc {
+  font-size: 12px;
+}
+#tickets .tickets-content [class*=col-] {
+  column-gap: 24px;
+}
+#tickets .tickets-content .ticket-card {
+  text-align: center;
+}
+#tickets .tickets-content .ticket-card .ticket-card-title {
+  padding: 44px 0 20px 0;
+  font-family: MonumentExtended-Regular;
+}
+#tickets .tickets-content .ticket-card p {
+  font-size: 16px;
+  color: rgb(185, 181, 181);
+}
+#tickets .tickets-content .ticket-card ul {
+  margin-left: -20px;
+  font-size: 16px;
+  list-style-type: none;
+  color: rgb(185, 181, 181);
+  line-height: 30px;
+  margin-bottom: -28px;
+}
+#tickets .tickets-content .ticket-card .ticket-card-price {
+  font-family: MonumentExtended-Regular;
+  margin-top: 100px;
+}
+#tickets .tickets-content .ticket-card .ticket-card-button button {
+  font-family: MonumentExtended-Regular;
+  width: 180px;
+  height: 60px;
+  background-color: transparent;
+  color: #FFFF00;
+  border: 1px solid #FFFF00;
+  margin: 40px 0;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=style.css.map */

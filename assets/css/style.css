@@ -27,6 +27,16 @@
   font-size: 16px;
 }
 
+.menu-links a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  opacity: 60%;
+}
+.menu-links a:hover {
+  opacity: 100%;
+}
+
 #ad-boxes {
   padding-top: 88px;
 }
@@ -52,12 +62,12 @@
   font-size: 14px;
   font-family: MonumentExtended-Regular;
   color: #FFFF00;
-  border: 1px solid #FFFF00;
   background-color: transparent;
-  border: none;
+  border: 1px solid #FFFF00;
 }
 #ad-boxes .ad-box .left-side .buy-ticket-button button:hover {
   background-color: #FFFF00;
+  color: black;
 }
 #ad-boxes .ad-box .left-side .buy-ticket-button i {
   font-size: 16px;
@@ -74,8 +84,20 @@
   position: relative;
   top: 68px;
   left: 60px;
+  animation-name: ellipse;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
 }
 
+@keyframes ellipse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #info .info-content {
   font-family: MonumentExtended-Regular;
   color: white;
@@ -170,6 +192,7 @@
 }
 #tickets .tickets-content .ticket-card {
   text-align: center;
+  border: 1px solid white;
 }
 #tickets .tickets-content .ticket-card .ticket-card-title {
   padding: 44px 0 20px 0;
@@ -196,15 +219,28 @@
   width: 180px;
   height: 60px;
   background-color: transparent;
-  color: #FFFF00;
-  border: 1px solid #FFFF00;
+  color: white;
+  border: 1px solid white;
   margin: 40px 0;
   letter-spacing: 2px;
+}
+#tickets .tickets-content .ticket-card:hover {
+  border: 1px solid #FFFF00;
+}
+#tickets .tickets-content .ticket-card:hover .ticket-card-price {
+  color: #FFFF00;
+}
+#tickets .tickets-content .ticket-card:hover button {
+  color: #FFFF00;
+  border: 1px solid #FFFF00;
 }
 
 #featured-musicians {
   color: white;
   margin-top: 60px;
+}
+#featured-musicians .pic {
+  transition: 1s ease;
 }
 #featured-musicians .title {
   font-family: MonumentExtended-Regular;
@@ -214,7 +250,27 @@
 }
 #featured-musicians .desc {
   font-size: 18px;
+  padding: 12px 0;
   margin-bottom: 60px;
+}
+#featured-musicians .pic-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: MonumentExtended-Regular;
+  width: 140px;
+  height: 40px;
+  background-color: #FFFF00;
+  color: black;
+  font-size: 14px;
+  display: none;
+}
+#featured-musicians .pic:hover img {
+  opacity: 40%;
+}
+#featured-musicians .pic:hover .pic-time {
+  display: flex;
 }
 
 #faq .title {
@@ -237,7 +293,8 @@
   transition: 0.4s;
   border-top: 1px solid gray;
 }
-#faq .active, #faq .accordion:hover {
+#faq .active,
+#faq .accordion:hover {
   color: white;
 }
 #faq .accordion:after {
@@ -270,7 +327,7 @@
   font-size: 12px;
 }
 #merch .merch-content .picture img {
-  width: 80%;
+  width: 94%;
 }
 #merch .merch-content .picture .desc {
   padding: 20px 0;

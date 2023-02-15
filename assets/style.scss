@@ -8,7 +8,7 @@
     font-family: MonumentExtended-Regular;
     src: url(../fonts/MonumentExtended-Regular.otf);
     font-weight: normal;
-font-style: normal;
+    font-style: normal;
 }
 
 $monument-font-family: MonumentExtended-Regular;
@@ -27,6 +27,19 @@ $yellow: #FFFF00;
     color: white;
     font-size: 16px;
 }
+.menu-links{
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        opacity: 60%;
+    }
+    
+    a:hover {
+        opacity: 100%;
+    }
+}
+
 
 #ad-boxes {
     padding-top: 88px;
@@ -56,14 +69,16 @@ $yellow: #FFFF00;
                 height: 54px;
                 font-size: 14px;
                 font-family: $monument-font-family;
-                color:$yellow;
-                border: 1px solid $yellow;
+                color: $yellow;
                 background-color: transparent;
-                border: none;
+                border: 1px solid $yellow;
             }
-            .buy-ticket-button button:hover{
+
+            .buy-ticket-button button:hover {
                 background-color: $yellow;
+                color: black;
             }
+
             .buy-ticket-button i {
                 font-size: 16px;
                 font-stretch: wider;
@@ -84,9 +99,21 @@ $yellow: #FFFF00;
                 position: relative;
                 top: 68px;
                 left: 60px;
-
+                animation-name: ellipse;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-timing-function: linear;
             }
         }
+    }
+}
+
+@keyframes ellipse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -219,6 +246,7 @@ $yellow: #FFFF00;
 
         .ticket-card {
             text-align: center;
+            border: 1px solid white;
 
             .ticket-card-title {
                 padding: 44px 0 20px 0;
@@ -249,39 +277,80 @@ $yellow: #FFFF00;
                 width: 180px;
                 height: 60px;
                 background-color: transparent;
-                color: $yellow;
-                border: 1px solid $yellow;
+                color: white;
+                border: 1px solid white;
                 margin: 40px 0;
                 letter-spacing: 2px;
             }
         }
+        .ticket-card:hover{
+            .ticket-card-price {
+                color: $yellow;
+            }
+            button{
+                color: $yellow;
+                border: 1px solid $yellow;
+            }
+            border:1px solid $yellow;
+        }
     }
 }
 
-#featured-musicians{
-    color:white;
-    margin-top:60px;
-    .title{       
+#featured-musicians {
+    color: white;
+    margin-top: 60px;
+
+    .pic{
+        transition: 1s ease;
+    }
+    .title {
         font-family: $monument-font-family;
     }
-   img{
-    width: 94%;
-   }
-   .desc{
-    font-size: 18px;
-    margin-bottom: 60px;
-   }
+
+    img {
+        width: 94%;
+    }
+
+    .desc {
+        font-size: 18px;
+        padding: 12px 0;
+        margin-bottom: 60px;
+    }
+    .pic-time{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        font-family: $monument-font-family;
+        width: 140px;
+        height:40px;
+        background-color: #FFFF00;
+        color:black;
+        font-size: 14px;
+        display: none;
+    }
+    .pic:hover{
+        img{
+            opacity: 40%;
+        }
+        .pic-time{
+            display: flex;
+        }
+    }
+    
+        
+    
 
 }
 
-#faq{
-    .title{
+#faq {
+    .title {
         font-family: $monument-font-family;
         color: white;
         padding: 40px 0;
     }
 
-    button{
+    button {
         background-color: transparent;
     }
 
@@ -296,35 +365,37 @@ $yellow: #FFFF00;
         font-size: 24px;
         transition: 0.4s;
         border-top: 1px solid gray;
-      }
-      
-      .active, .accordion:hover {
+    }
+
+    .active,
+    .accordion:hover {
         color: white;
-      }
-      
-      .accordion:after {
+    }
+
+    .accordion:after {
         content: '\002B';
         font-weight: bold;
         float: right;
         margin-left: 5px;
-      }
-      
-      .active:after {
+    }
+
+    .active:after {
         content: "\2212";
-      }
-      
-      .panel {
+    }
+
+    .panel {
         color: white;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-      }
-      .last-panel{        
+    }
+
+    .last-panel {
         border-bottom: 1px solid gray;
-      }
+    }
 }
 
-#merch{
+#merch {
     .merch-content {
         margin-top: 80px;
         color: white;
@@ -337,35 +408,40 @@ $yellow: #FFFF00;
             font-size: 12px;
         }
 
-        .picture{
-            img{
-                width: 80%;
-               }
-               .desc{
-                padding:20px 0;
+        .picture {
+            img {
+                width: 94%;
+            }
+
+            .desc {
+                padding: 20px 0;
                 font-size: 18px;
-               }
+            }
         }
     }
 }
-footer{
-    .footer-content{
-        color:white;
+
+footer {
+    .footer-content {
+        color: white;
         margin-bottom: 20px;
-        ul{
+
+        ul {
             list-style-type: none;
-           
         }
-        a{
+
+        a {
             cursor: pointer;
             text-decoration: none;
-            color:white;
-            opacity:60%;
+            color: white;
+            opacity: 60%;
         }
-        a:hover{
+
+        a:hover {
             opacity: 100%;
         }
-        .logo{
+
+        .logo {
             font-family: $monument-font-family;
             font-size: 16px;
         }

@@ -16,41 +16,41 @@
 
 <body class="bg-black" style="background-image: url(./img/Rectangle.svg);">
     <div class="container">
-        <header>
+        <header id="header">
             <div class="navbar navbar-expand-lg fixed-top bg-black"
                 style="background-image: url(./img/RectangleHeader.svg);">
                 <div class="container">
-                    <a class="navbar-brand font-monument col-2 text-wrap" href="./index.html">Rock Music Festival</a>
+                    <a class="navbar-brand font-monument col-2 text-white text-wrap" href="#header">Rock Music Festival</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse justify-content-end menu-links" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item me-4">
-                                <a class="nav-link active text-white opacity-medium" aria-current="page" href="#">About
+                                <a class="nav-link active text-white" aria-current="page" href="#about-festival">About
                                     Festival</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link active text-white opacity-medium" aria-current="page"
-                                    href="#">Schedule</a>
+                                <a class="nav-link active text-white" aria-current="page"
+                                    href="#schedule">Schedule</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link active text-white opacity-medium" aria-current="page"
-                                    href="#">Tickets</a>
+                                <a class="nav-link active text-white" aria-current="page"
+                                    href="#tickets">Tickets</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link active text-white opacity-medium" aria-current="page"
-                                    href="#">Musicians</a>
+                                <a class="nav-link active text-white" aria-current="page"
+                                    href="#featured-musicians">Musicians</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link active text-white opacity-medium" aria-current="page"
-                                    href="#">FAQ</a>
+                                <a class="nav-link active text-white" aria-current="page"
+                                    href="#faq">FAQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white opacity-medium" aria-current="page"
-                                    href="#">Merch</a>
+                                <a class="nav-link active text-white" aria-current="page"
+                                    href="#merch">Merch</a>
                             </li>
 
                         </ul>
@@ -190,7 +190,7 @@
                     <p class="opacity-medium">Choose the best ticket for you</p>
                 </div>
                 <div class="ticket-cards d-flex justify-content-between col-12">
-                    <div class="ticket-card border col-4">
+                    <div class="ticket-card col-4">
                         <div class="ticket-card-title">
                             <h4>1 Day Pass</h4>
                         </div>
@@ -209,7 +209,7 @@
                             <button>Buy Ticket</button>
                         </div>
                     </div>
-                    <div class="ticket-card border col-4">
+                    <div class="ticket-card col-4">
                         <div class="ticket-card-title">
                             <h4>3 Day Pass</h4>
                         </div>
@@ -225,7 +225,7 @@
                             <button>Buy Ticket</button>
                         </div>
                     </div>
-                    <div class="ticket-card border col-4">
+                    <div class="ticket-card col-4">
                         <div class="ticket-card-title">
                             <h4>VIP</h4>
                         </div>
@@ -251,37 +251,48 @@
             <div class="pictures">
                 <div class="picture-row col-12 d-flex justify-content-between">
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/coldplay.png" alt=""></div>
+                        <div class="pic d-flex justify-content-center align-items-center"><img src="./img/coldplay.png" alt="">
+                            <div class="pic-time">20 May 18:00</div></div>
                         <div class="desc">Coldplay / 20 May</div>
                     </div>
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/3.png" alt=""></div>
+                        <div class="pic d-flex justify-content-center align-items-center"><img src="./img/3.png" alt="">
+                            <div class="pic-time">20 May 20:00</div></div>
                         <div class="desc">Maneskin / 20 May</div>
                     </div>
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/4.png" alt="megadeth"></div>
+                        <div class="pic d-flex justify-content-center align-items-center"><img src="./img/4.png" alt="megadeth">
+                            <div class="pic-time">22 May 18:00</div></div>
                         <div class="desc">Megadeth / 22 May</div>
                     </div>
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/5.png" alt="wolf-alice"></div>
+                        <div class="pic d-flex justify-content-center align-items-center"><img src="./img/5.png" alt="wolf-alice">
+                            <div class="pic-time">21 May 18:00</div></div>
                         <div class="desc">Wolf Alice / 21 May</div>
                     </div>
                 </div>
                 <div class="picture-row col-12 d-flex justify-content-between">
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/6.png" alt="teoman"></div>
+                        <div class="pic d-flex justify-content-center align-items-center"><img src="./img/6.png" alt="teoman">
+                            <div class="pic-time">21 May 20:00</div></div>
                         <div class="desc">Teoman / 21 May</div>
                     </div>
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/7.png" alt="duman"></div>
+                        <div class="pic d-flex justify-content-center align-items-center"><img src="./img/7.png" alt="duman">
+                            <div class="pic-time">22 May 20:00</div></div>
                         <div class="desc">Duman / 22 May</div>
                     </div>
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/8.png" alt="manga"></div>
+                        <div class="pic d-flex justify-content-center align-items-center">
+                            <img src="./img/8.png" alt="manga">
+                            <div class="pic-time">22 May 21:00</div>
+                        </div>
+                        
                         <div class="desc">Manga / 22 May</div>
                     </div>
                     <div class="picture col-3">
-                        <div class="pic"><img src="./img/9.png" alt="morveotesi"></div>
+                        <div class="pic d-flex justify-content-center align-items-center"><img src="./img/9.png" alt="morveotesi">
+                            <div class="pic-time">21 May 21:00</div></div>
                         <div class="desc">Mor ve Otesi / 21 May</div>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -26,10 +27,10 @@
   font-size: 16px;
 }
 
-#ticket {
+#ad-boxes {
   padding-top: 88px;
 }
-#ticket .ad-box {
+#ad-boxes .ad-box {
   height: 510px;
   background-image: url(../img/01\ rock\ photo.png);
   background-repeat: no-repeat;
@@ -37,33 +38,38 @@
   background-position-x: 78%;
   background-position-y: 10%;
 }
-#ticket .ad-box .left-side .title h1 {
+#ad-boxes .ad-box .left-side .title h1 {
   font-family: MonumentExtended-Regular;
   color: white;
 }
-#ticket .ad-box .left-side .desc {
+#ad-boxes .ad-box .left-side .desc {
   width: 64%;
   color: white;
 }
-#ticket .ad-box .left-side .buy-ticket-button button {
+#ad-boxes .ad-box .left-side .buy-ticket-button button {
   width: 25%;
   height: 54px;
   font-size: 14px;
   font-family: MonumentExtended-Regular;
-  background-color: #FFFF00;
+  color: #FFFF00;
+  border: 1px solid #FFFF00;
+  background-color: transparent;
   border: none;
 }
-#ticket .ad-box .left-side .buy-ticket-button i {
+#ad-boxes .ad-box .left-side .buy-ticket-button button:hover {
+  background-color: #FFFF00;
+}
+#ad-boxes .ad-box .left-side .buy-ticket-button i {
   font-size: 16px;
   font-stretch: wider;
   margin-left: 10px;
 }
-#ticket .ad-box .right-side .rock-2 img {
+#ad-boxes .ad-box .right-side .rock-2 img {
   width: 72%;
   float: right;
   margin-top: 26px;
 }
-#ticket .ad-box .right-side .ellipse img {
+#ad-boxes .ad-box .right-side .ellipse img {
   width: 20%;
   position: relative;
   top: 68px;
@@ -194,4 +200,100 @@
   border: 1px solid #FFFF00;
   margin: 40px 0;
   letter-spacing: 2px;
+}
+
+#featured-musicians {
+  color: white;
+  margin-top: 60px;
+}
+#featured-musicians .title {
+  font-family: MonumentExtended-Regular;
+}
+#featured-musicians img {
+  width: 94%;
+}
+#featured-musicians .desc {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+#faq .title {
+  font-family: MonumentExtended-Regular;
+  color: white;
+  padding: 40px 0;
+}
+#faq button {
+  background-color: transparent;
+}
+#faq .accordion {
+  font-family: MonumentExtended-Regular;
+  color: rgb(179, 176, 176);
+  padding: 30px 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  border-top: 1px solid gray;
+}
+#faq .active, #faq .accordion:hover {
+  color: white;
+}
+#faq .accordion:after {
+  content: "+";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+#faq .active:after {
+  content: "−";
+}
+#faq .panel {
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#faq .last-panel {
+  border-bottom: 1px solid gray;
+}
+
+#merch .merch-content {
+  margin-top: 80px;
+  color: white;
+}
+#merch .merch-content .title {
+  font-family: MonumentExtended-Regular;
+}
+#merch .merch-content .desc {
+  font-size: 12px;
+}
+#merch .merch-content .picture img {
+  width: 80%;
+}
+#merch .merch-content .picture .desc {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+footer .footer-content {
+  color: white;
+  margin-bottom: 20px;
+}
+footer .footer-content ul {
+  list-style-type: none;
+}
+footer .footer-content a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  opacity: 60%;
+}
+footer .footer-content a:hover {
+  opacity: 100%;
+}
+footer .footer-content .logo {
+  font-family: MonumentExtended-Regular;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

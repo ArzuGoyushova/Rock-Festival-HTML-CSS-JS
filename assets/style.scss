@@ -28,7 +28,7 @@ $yellow: #FFFF00;
     font-size: 16px;
 }
 
-#ticket {
+#ad-boxes {
     padding-top: 88px;
 
     .ad-box {
@@ -56,10 +56,14 @@ $yellow: #FFFF00;
                 height: 54px;
                 font-size: 14px;
                 font-family: $monument-font-family;
-                background-color: $yellow;
+                color:$yellow;
+                border: 1px solid $yellow;
+                background-color: transparent;
                 border: none;
             }
-
+            .buy-ticket-button button:hover{
+                background-color: $yellow;
+            }
             .buy-ticket-button i {
                 font-size: 16px;
                 font-stretch: wider;
@@ -250,6 +254,120 @@ $yellow: #FFFF00;
                 margin: 40px 0;
                 letter-spacing: 2px;
             }
+        }
+    }
+}
+
+#featured-musicians{
+    color:white;
+    margin-top:60px;
+    .title{       
+        font-family: $monument-font-family;
+    }
+   img{
+    width: 94%;
+   }
+   .desc{
+    font-size: 18px;
+    margin-bottom: 60px;
+   }
+
+}
+
+#faq{
+    .title{
+        font-family: $monument-font-family;
+        color: white;
+        padding: 40px 0;
+    }
+
+    button{
+        background-color: transparent;
+    }
+
+    .accordion {
+        font-family: $monument-font-family;
+        color: rgb(179, 176, 176);
+        padding: 30px 0px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 24px;
+        transition: 0.4s;
+        border-top: 1px solid gray;
+      }
+      
+      .active, .accordion:hover {
+        color: white;
+      }
+      
+      .accordion:after {
+        content: '\002B';
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .last-panel{        
+        border-bottom: 1px solid gray;
+      }
+}
+
+#merch{
+    .merch-content {
+        margin-top: 80px;
+        color: white;
+
+        .title {
+            font-family: $monument-font-family;
+        }
+
+        .desc {
+            font-size: 12px;
+        }
+
+        .picture{
+            img{
+                width: 80%;
+               }
+               .desc{
+                padding:20px 0;
+                font-size: 18px;
+               }
+        }
+    }
+}
+footer{
+    .footer-content{
+        color:white;
+        margin-bottom: 20px;
+        ul{
+            list-style-type: none;
+           
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color:white;
+            opacity:60%;
+        }
+        a:hover{
+            opacity: 100%;
+        }
+        .logo{
+            font-family: $monument-font-family;
+            font-size: 16px;
         }
     }
 }
